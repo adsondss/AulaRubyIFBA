@@ -20,6 +20,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_25_231131) do
     t.date "nascimento"
     t.string "telefone"
     t.string "sexo"
+    t.string "rg"
+    t.string "endereco"
   end
 
 end
