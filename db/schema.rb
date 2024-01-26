@@ -19,9 +19,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_25_231131) do
     t.datetime "updated_at", null: false
     t.date "nascimento"
     t.string "telefone"
-    t.string "sexo"
-    t.string "rg"
     t.string "endereco"
+    t.string "rg"
+    t.string "sexo"
   end
 
 end
