@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marcaDoProduto: MyString
+  nomeDoProduto: MyString
+  dataDeFabricacao: 2024-01-30
+  valorDoProduto: MyString
+  disponibilidadeDeEstoque: MyString
+
+two:
+  marcaDoProduto: MyString
+  nomeDoProduto: MyString
+  dataDeFabricacao: 2024-01-30
+  valorDoProduto: MyString
+  disponibilidadeDeEstoque: MyString
