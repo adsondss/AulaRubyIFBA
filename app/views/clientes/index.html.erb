@@ -1,14 +1,62 @@
+
+
+
 <p style="color: green"><%= notice %></p>
+<div class="container">
 
-<h1>Clientes</h1>
-
-<div id="clientes">
-  <% @clientes.each do |cliente| %>
-    <%= render cliente %>
-    <p>
-      <%= link_to "Show this cliente", cliente %>
-    </p>
-  <% end %>
+<div class="row">
+  <div class="col-10">
+    <h1>Clientes</h1>
+  </div>
+  <div class="col-2">
+    <%= link_to "NOVO CLIENTE", new_cliente_path , class:"btn btn-primary"%>
+  </div>
 </div>
 
-<%= link_to "New cliente", new_cliente_path %>
+
+<hr>
+<div id="clientes">
+
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>NOME</th>
+      <th>CPF</th>
+      <th>SEXO</th>
+      <th>TELEFONE</th>
+      <th>AÇÕES</td>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+  <% @clientes.each do |cliente| %>
+
+    <%= render cliente %>
+
+  <% end %>
+
+
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>

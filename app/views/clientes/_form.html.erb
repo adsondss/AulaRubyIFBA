@@ -1,57 +1,60 @@
+<div class="container">
 <%= form_with(model: cliente) do |form| %>
   <% if cliente.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
-
-      <ul>
+ 
         <% cliente.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <div class="alert alert-danger" role="alert"> <%= error.full_message %> </div>
         <% end %>
-      </ul>
-    </div>
+      
+    
   <% end %>
 
-  <div>
+
+   
+
+  <div class="form-group">
     <%= form.label :nome, style: "display: block" %>
-    <%= form.text_field :nome %>
+    <%= form.text_field :nome , class:"form-control " %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= form.label :cpf, style: "display: block" %>
-    <%= form.text_field :cpf %>
+    <%= form.text_field :cpf , class:"form-control"%>
   </div>
 
   <div>
     <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email , class:"form-control"%>
   </div>
   
   <div>
     <%= form.label :nascimento, style: "display: block" %>
-    <%= form.date_field :nascimento %>
+    <%= form.date_field :nascimento , class:"form-control"%>
   </div>
 
   <div>
     <%= form.label :telefone, style: "display: block" %>
-    <%= form.text_field :telefone %>
+    <%= form.text_field :telefone , class:"form-control"%>
   </div>
   
   <div>
     <%= form.label :endereco, style: "display: block" %>
-    <%= form.text_field :endereco %>
+    <%= form.text_field :endereco , class:"form-control"%>
   </div>
 
   <div>
     <%= form.label :rg, style: "display: block" %>
-    <%= form.text_field :rg %>
+    <%= form.text_field :rg , class:"form-control"%>
   </div>
 
-  <div>
+  <div class="form-group">
   <%= form.label :sexo, style: "display: block" %>
-  <%= form.select :sexo, ["Masculino", "Feminino"] %>
+  <%= form.select :sexo, ["Masculino", "Feminino"] , class:"form-control"%>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-primary"%>
   </div>
 <% end %>
+
+</div>

@@ -1,42 +1,15 @@
 <div id="<%= dom_id cliente %>">
-  <p>
-    <strong>Nome:</strong>
-    <%= cliente.nome %>
-  </p>
-
-  <p>
-    <strong>Cpf:</strong>
-    <%= cliente.cpf %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= cliente.email %>
-  </p>
-  
-  <p>
-    <strong>nascimento:</strong>
-    <%= cliente.nascimento %>
-  </p>
-  
-  <p>
-    <strong>telefone:</strong>
-    <%= cliente.telefone %>
-  </p>
-  
-  <p>
-    <strong>endereco:</strong>
-    <%= cliente.endereco %>
-  </p>
-
-  <p>
-  <strong>rg:</strong>
-  <%= cliente.rg %>
-</p>
-
-  <p>
-  <strong>sexo:</strong>
-  <%= cliente.sexo %>
-  </p>
-
+    <tr>
+      <td><%= cliente.nome %></td>
+      <td><%= cliente.cpf %></td>
+      <td><%= cliente.sexo %></td>
+      <td><%= cliente.telefone %></td>
+      <td>
+        <%= link_to "<i class='fa fa-search-plus' aria-hidden='true'></i>".html_safe, cliente %>
+      </td>
+    </tr>
 </div>
+
+ 
+
+
