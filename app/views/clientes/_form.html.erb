@@ -1,4 +1,4 @@
-<div class="container">
+
 <%= form_with(model: cliente) do |form| %>
   <% if cliente.errors.any? %>
  
@@ -50,12 +50,12 @@
 
   <div class="form-group">
   <%= form.label :sexo, style: "display: block" %>
-  <%= form.select :sexo, ["Masculino", "Feminino"] , class:"form-control"%>
+  <%= form.select :sexo, ["Masculino", "Feminino"] , {:class => 'grouped_select',id:"location_grouped"} ,class:"form-control"%>
   </div>
-
-  <div>
-    <%= form.submit class:"btn btn-primary"%>
+<br>
+  <div class="btn-group" role="group">
+    <%= link_to "Voltar", clientes_path, class:"btn btn-secondary btn-lg" %>
+    <%= form.submit class:"btn btn-primary btn-lg"%>
   </div>
 <% end %>
 
-</div>
