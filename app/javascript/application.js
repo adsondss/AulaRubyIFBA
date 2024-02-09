@@ -5,3 +5,4 @@ import "controllers"
 //= require jquery_ujs
 //= require_tree
 //= require jquery.inputmask.bundle.min
+//= require jquery.maskMoney

@@ -28,7 +28,7 @@
 
   <div>
     <%= form.label :valorDoProduto, style: "display: block" %>
-    <%= form.text_field :valorDoProduto %>
+    <%= form.text_field :valorDoProduto, "data-prefix": "R$ ", "data-thousands":".", "data-decimal":","%>
   </div>
 
   <div>
@@ -36,7 +36,11 @@
     <%= form.text_field :disponibilidadeDeEstoque %>
   </div>
 
+
+
   <div>
     <%= form.submit %>
   </div>
 <% end %>
+
+		<script type="text/javascript">$("#produto_valorDoProduto").maskMoney();</script>
